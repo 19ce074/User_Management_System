@@ -1,8 +1,8 @@
 import mongoose from "mongoose"
-
+import dotenv from 'dotenv'
 const connection = async (username, password) => {
 
-    const URL = `mongodb+srv://${username}:${password}@crud-app.demzffi.mongodb.net/?retryWrites=true&w=majority`;
+    const URL = process.env.DB_URL;
 
     try{
         await mongoose.connect(URL, { useUnifiedTopology: true, useNewUrlParser: true })

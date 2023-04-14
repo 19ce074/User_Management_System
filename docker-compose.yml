@@ -1,0 +1,17 @@
+version: '3'
+services:
+  # db:
+  #   image: mongo
+  #   ports:
+  #     -27016:27017
+  client:
+    build: ./client
+    depends_on:
+      - server
+    ports:
+      - 8000:3000
+  
+  server:
+    build: ./server
+    ports:
+      - 8001:3001
