@@ -1,7 +1,7 @@
 <h1 align="center">MERN Stack</h1>
 <h4 align="center">MongoDB, Expressjs, React, Nodejs</h4>
 
-> MERN is a fullstack implementation in MongoDB, Expressjs, React and Nodejs.
+> MERN is a fullstack implementation in MongoDB, Expressjs, React and Nodejs. Containerized using docker.
 
 Project with Express/Node Backend + React/MaterialUI Frontend + MongoDB Database.
 
